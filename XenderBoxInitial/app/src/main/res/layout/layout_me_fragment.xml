@@ -1,0 +1,147 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              xmlns:meitemview="http://schemas.android.com/apk/res-auto"
+              android:orientation="vertical"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+        <ImageView
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:src="@drawable/tab_icon_me"
+            android:layout_margin="10dp"/>
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_gravity="center">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Alex"
+                android:textStyle="bold"
+                android:textColor="#101010"
+                android:textSize="20sp"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="9560062424"
+                android:textColor="#101010"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Invitation Code:JVSC"
+                android:textColor="#101010"/>
+
+        </LinearLayout>
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="20px"
+        android:background="#e4e2e2"/>
+
+
+    <com.example.raynwang.xenderboxinitial.view.MeItemView
+        android:id="@+id/notifiaction"
+        meitemview:icon="@drawable/tab_icon_me"
+        meitemview:title="Notification"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="5dp" />
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1px"
+        android:background="#939393"/>
+
+    <com.example.raynwang.xenderboxinitial.view.MeItemView
+        android:id="@+id/feedback"
+        meitemview:icon="@drawable/tab_icon_me"
+        meitemview:title="Feedback"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="5dp" />
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1px"
+        android:background="#939393"/>
+
+    <com.example.raynwang.xenderboxinitial.view.MeItemView
+        android:id="@+id/invitation"
+        meitemview:icon="@drawable/tab_icon_me"
+        meitemview:title="Invitation"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="5dp" />
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="20px"
+        android:background="#e4e2e2"/>
+
+    <com.example.raynwang.xenderboxinitial.view.MeItemView
+        android:id="@+id/personalInformation"
+        meitemview:icon="@drawable/tab_icon_me"
+        meitemview:title="Personal Information"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="5dp" />
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1px"
+        android:background="#939393"/>
+
+    <com.example.raynwang.xenderboxinitial.view.MeItemView
+        android:id="@+id/bankinformation"
+        meitemview:icon="@drawable/tab_icon_me"
+        meitemview:title="Bank Information"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="5dp" />
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1px"
+        android:background="#939393"/>
+
+    <com.example.raynwang.xenderboxinitial.view.MeItemView
+    android:id="@+id/changePasswork"
+    meitemview:icon="@drawable/tab_icon_me"
+    meitemview:title="Change Password"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:padding="5dp" />
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="20px"
+        android:background="#e4e2e2"/>
+
+    <com.example.raynwang.xenderboxinitial.view.MeItemView
+        android:id="@+id/installationManuals"
+        meitemview:icon="@drawable/tab_icon_me"
+        meitemview:title="Installation Manuals"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="5dp" />
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="35px"
+        android:background="#e4e2e2"/>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:text="Log Out"
+        android:textSize="16sp"
+        android:gravity="center"
+        android:textColor="#101010"/>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:background="#e4e2e2"/>
+
+</LinearLayout>

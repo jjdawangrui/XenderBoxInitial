@@ -1,0 +1,264 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              xmlns:app="http://schemas.android.com/apk/res-auto"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent">
+
+    <LinearLayout
+        android:id="@+id/ll_1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp"
+        android:orientation="horizontal">
+
+        <ImageView
+            android:layout_width="20dp"
+            android:layout_height="wrap_content"
+            android:src="@drawable/tab_icon_me"/>
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="7"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Notice"
+                android:textColor="#101010"
+                android:textSize="18sp"
+                android:textStyle="bold"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:singleLine="false"
+                android:text="Your recent installation quality is poor by 09/10/2017."/>
+        </LinearLayout>
+
+        <ImageView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_weight="2"/>
+    </LinearLayout>
+
+    <View
+        android:id="@+id/zx_1"
+        android:layout_below="@+id/ll_1"
+        android:layout_width="match_parent"
+        android:layout_height="1px"
+        android:background="#939393"/>
+
+    <LinearLayout
+        android:layout_below="@+id/zx_1"
+        android:id="@+id/ll_2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_margin="10dp">
+        <ImageView
+            android:src="@drawable/tab_icon_me"
+            android:layout_width="20dp"
+            android:layout_height="wrap_content"/>
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_weight="7"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="JOIN US!"
+                android:textStyle="bold"
+                android:textColor="#101010"
+                android:textSize="18sp"/>
+            <TextView
+                android:singleLine="false"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Be a seed promoter,contact your area manager for more money！"/>
+        </LinearLayout>
+
+        <ImageView
+            android:layout_width="0dp"
+            android:layout_weight="2"
+            android:layout_height="wrap_content"
+            android:src="@drawable/tab_icon_me"
+            android:layout_gravity="center"/>
+    </LinearLayout>
+
+    <View
+        android:id="@+id/zx_2"
+        android:layout_below="@+id/ll_2"
+        android:layout_width="match_parent"
+        android:layout_height="1px"
+        android:background="#939393"/>
+
+    <LinearLayout
+        android:id="@+id/ll_3"
+        android:layout_below="@+id/zx_2"
+        android:layout_width="match_parent"
+        android:layout_height="150dp"
+        android:orientation="horizontal">
+        <!--左边整体-->
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+            <!--左上-->
+            <LinearLayout
+                android:id="@+id/ll_zuoshang"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="6"
+                android:orientation="vertical"
+                android:gravity="center">
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Area Manager"/>
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="TestManager"
+                    android:textColor="#101010"/>
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content">
+                    <ImageView
+                        android:layout_width="20dp"
+                        android:layout_height="20dp"
+                        android:src="@drawable/tab_icon_me"/>
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="9988774433"
+                        android:textColor="#4bc8e7"
+                        android:layout_gravity="center"/>
+                </LinearLayout>
+            </LinearLayout>
+
+            <!--左下-->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="4"
+                android:orientation="horizontal"
+                android:layout_below="@+id/ll_zuoshang"
+                android:gravity="center"
+                android:background="@drawable/backgroundshape">
+                <ImageView
+                    android:src="@drawable/tab_icon_me"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"/>
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="8826671616"
+                        android:textStyle="bold"
+                        android:textColor="#4bc8e7"
+                        android:textSize="16sp"/>
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Mon-Fri 9am-6pm"
+                        android:textSize="10sp"/>
+                </LinearLayout>
+
+            </LinearLayout>
+        </LinearLayout>
+
+        <View
+            android:layout_width="1px"
+            android:layout_height="match_parent"
+            android:background="#939393"
+            android:layout_centerHorizontal="true"/>
+
+        <!--右边-->
+        <RelativeLayout
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="match_parent">
+
+            <GridLayout
+                android:id="@+id/gl_app"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:rowCount="2"
+                android:columnCount="2"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="20dp"
+                android:background="@drawable/appshape">
+
+                <ImageView
+                    android:src="@drawable/tab_icon_me"
+                    android:layout_margin="8dp"/>
+                <ImageView
+                    android:src="@drawable/tab_icon_me"
+                    android:layout_margin="8dp"/>
+                <ImageView
+                    android:src="@drawable/tab_icon_me"
+                    android:layout_margin="8dp"/>
+                <ImageView
+                    android:src="@drawable/tab_icon_me"
+                    android:layout_margin="8dp"/>
+
+            </GridLayout>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/gl_app"
+                android:layout_centerHorizontal="true"
+                android:text="10 Apps"
+                android:textStyle="bold"
+                android:layout_marginTop="5dp"/>
+
+
+        </RelativeLayout>
+
+    </LinearLayout>
+
+    <View
+        android:id="@+id/zx_3"
+        android:layout_below="@id/ll_3"
+        android:layout_width="match_parent"
+        android:layout_height="1px"
+        android:background="#939393"/>
+
+    <!--俩按钮-->
+    <Button
+        android:id="@+id/bt_1"
+        android:layout_marginTop="20dp"
+        android:layout_below="@+id/zx_3"
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:text="Send Xender By Bluetooth"
+        android:layout_centerHorizontal="true"
+        android:textAllCaps="false"
+        android:background="@drawable/bottomshape"
+        android:textColor="@color/white"
+        android:textSize="18sp"/>
+
+    <Button
+        android:layout_below="@+id/bt_1"
+        android:id="@+id/bt_2"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="20dp"
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:text="Send Xender By HotSpot"
+        android:layout_gravity="center"
+        android:textAllCaps="false"
+        android:background="@drawable/bottomshape"
+        android:textColor="@color/white"
+        android:textSize="18sp"/>
+
+</RelativeLayout>
